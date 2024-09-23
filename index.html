@@ -14,22 +14,22 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
-  <body class="font-lato bg-[#F5F5F5]">
+  <body class="font-lato bg-[#F5F5F5] overflow-x-hidden">
     <!-- header start -->
 
-    <header class="bg-[#1C1C1E]">
+    <header class="bg-[#1C1C1E]" id="header">
       <nav class="border-gray-200 dark:bg-gray-900">
         <div
           class="max-w-[1280px] flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <a
             href="https://flowbite.com/"
-            class="flex items-center space-x-3 rtl:space-x-reverse font-playfair font-bold text-xl md:text-[26px] text-[#D4AF37] tracking-wider"
+            class="flex items-center space-x-3 rtl:space-x-reverse font-playfair font-bold text-xl md:text-[26px] text-[#D4AF37] tracking-wider logo"
           >
             Luxi-Perfume
           </a>
           <button
-            class="text-sm md:text-lg text-[#FFFFFF] bg-[#D4AF37] hover:bg-[#B76E79] font-bold px-6 py-2 rounded-md uppercase"
+            class="text-sm md:text-lg text-[#FFFFFF] bg-[#D4AF37] hover:bg-[#B76E79] font-bold px-6 py-2 rounded-md uppercase nav1"
           >
             Shop Now
           </button>
@@ -41,19 +41,22 @@
     <!-- main start -->
     <main>
       <!-- hero start -->
-      <section class="relative py-[40px] md:py-[80px]" id="hero">
+      <section
+        class="relative py-[40px] md:py-[80px] lg:py-[140px] animate-fade-in"
+        id="hero"
+      >
         <div
           class="max-w-[1280px] flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <!-- left -->
           <div class="w-full md:w-1/2 order-12 md:order-1">
             <h1
-              class="max-w-[600px] text-[#1C1C1E] font-playfair font-bold text-3xl md:text-5xl xl:text-6xl leading-[50px] md:leading-[60px] xl:leading-[74px]"
+              class="max-w-[600px] text-[#1C1C1E] font-playfair font-bold text-3xl md:text-5xl xl:text-6xl leading-[50px] md:leading-[60px] xl:leading-[74px] animate-fade-in-text"
             >
               Experience the Essence of Luxury
             </h1>
             <h2
-              class="max-w-[500px] text-[#6D6D6D] text-sm md:text-lg leading-[20px] md:leading-[24px] py-[26px]"
+              class="max-w-[500px] text-[#6D6D6D] text-sm md:text-lg leading-[20px] md:leading-[24px] py-[26px] animate-fade-in-text"
             >
               Sign up for exclusive offers, early access to new fragrances, and
               luxury content.
@@ -62,25 +65,28 @@
               <input
                 type="text"
                 name="name"
-                class="rounded-md border-[#D4AF37] h-[48px]"
+                class="rounded-none border-b-2 border-t-0 border-r-0 border-l-0 border-[#D4AF37] bg-transparent h-[48px] focus:border-[#B76E79] focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0 focus:ring-opacity-0 animate-fade-in-text"
                 id="name"
                 placeholder="Enter your name"
+                required
               />
               <input
                 type="email"
                 name="email"
-                class="rounded-md border-[#D4AF37] h-[48px]"
+                class="rounded-none border-b-2 border-t-0 border-r-0 border-l-0 border-[#D4AF37] bg-transparent h-[48px] focus:border-[#B76E79] focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0 focus:ring-opacity-0 animate-fade-in-text"
                 id="email"
                 placeholder="Enter your email"
+                required
               />
+
               <button
-                class="w-full md:max-w-[250px] text-sm md:text-lg text-[#FFFFFF] bg-[#D4AF37] hover:bg-[#B76E79] font-bold px-6 rounded-md uppercase h-[48px] tracking-wide"
+                class="w-full md:max-w-[250px] text-sm md:text-lg text-[#FFFFFF] bg-[#D4AF37] hover:bg-[#B76E79] font-bold px-6 rounded-md uppercase h-[48px] tracking-wide animate-fade-in-text"
               >
                 Join the Luxi Club
               </button>
             </form>
             <ul
-              class="list-none flex justify-center md:justify-start items-center mt-6"
+              class="list-none flex justify-center md:justify-start items-center mt-6 animate-fade-in-text"
             >
               <li class="inline-block">
                 <img
@@ -131,16 +137,16 @@
       <!-- hero end -->
       <!-- features start -->
       <section class="relative py-[40px] md:py-[80px]" id="hero">
-        <div class="max-w-[1280px] mx-auto p-4">
+        <div class="max-w-[1280px] mx-auto p-4" id="features">
           <h2
-            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase"
+            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase heading-txt"
           >
             Why choose Luxi?
           </h2>
 
           <div class="grid grid-cols-3 gap-8 pt-12 md:pt-20 mx-auto">
             <div
-              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow"
+              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow boxs"
             >
               <div
                 class="bg-[#EEE5CE] w-[60px] h-[60px] rounded-xl flex justify-center items-center"
@@ -158,7 +164,7 @@
               </p>
             </div>
             <div
-              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow"
+              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow boxs"
             >
               <div
                 class="bg-[#EEE5CE] w-[60px] h-[60px] rounded-xl flex justify-center items-center"
@@ -176,7 +182,7 @@
               </p>
             </div>
             <div
-              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow"
+              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow boxs"
             >
               <div
                 class="bg-[#EEE5CE] w-[60px] h-[60px] rounded-xl flex justify-center items-center"
@@ -198,17 +204,17 @@
       </section>
       <!-- features end -->
       <!-- product start -->
-      <section class="relative py-[40px] md:py-[80px]" id="hero">
+      <section class="relative py-[40px] md:py-[80px]" id="products">
         <div class="max-w-[1280px] mx-auto p-4">
           <h2
-            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase"
+            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase heading-txt"
           >
             Best Selling Products
           </h2>
 
           <div class="grid grid-cols-3 gap-8 pt-12 md:pt-20 mx-auto">
             <div
-              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow"
+              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow boxs"
             >
               <img src="./img/product-01.webp" alt="" />
               <div
@@ -232,7 +238,7 @@
               </button>
             </div>
             <div
-              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow"
+              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow boxs"
             >
               <img src="./img/product-02.webp" alt="" />
               <div
@@ -256,7 +262,7 @@
               </button>
             </div>
             <div
-              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow"
+              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow boxs"
             >
               <img src="./img/product-01.webp" alt="" />
               <div
@@ -284,17 +290,17 @@
       </section>
       <!-- product end -->
       <!-- testimonial start -->
-      <section class="relative py-[40px] md:py-[80px]" id="hero">
+      <section class="relative py-[40px] md:py-[80px]" id="testimonial">
         <div class="max-w-[1280px] mx-auto p-4">
           <h2
-            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase"
+            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase heading-txt"
           >
             testimonial
           </h2>
 
           <div class="grid grid-cols-3 gap-8 pt-12 md:pt-20 mx-auto">
             <div
-              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow"
+              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow boxs"
             >
               <div class="flex justify-start items-center gap-4">
                 <img
@@ -310,6 +316,7 @@
                 </div>
               </div>
               <div class="flex space-x-1 py-[16px]">
+                <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
@@ -321,7 +328,7 @@
               </p>
             </div>
             <div
-              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow"
+              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow boxs"
             >
               <div class="flex justify-start items-center gap-4">
                 <img
@@ -337,6 +344,7 @@
                 </div>
               </div>
               <div class="flex space-x-1 py-[16px]">
+                <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
@@ -348,7 +356,7 @@
               </p>
             </div>
             <div
-              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow"
+              class="col-span-3 md:col-span-1 bg-[#F4F2EC] flex flex-col justify-start px-6 py-8 rounded-xl shadow boxs"
             >
               <div class="flex justify-start items-center gap-4">
                 <img
@@ -364,6 +372,7 @@
                 </div>
               </div>
               <div class="flex space-x-1 py-[16px]">
+                <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
                 <img src="./img/star.png" alt="" class="w-5 h-5" />
@@ -451,7 +460,10 @@
     <!-- footer end -->
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.js"></script>
     <script type="module" src="./src/main.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
