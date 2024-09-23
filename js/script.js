@@ -59,7 +59,6 @@ gsap.from("#features .heading-txt", {
     trigger: "#features .heading-txt",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
 gsap.from("#products .heading-txt", {
@@ -69,7 +68,6 @@ gsap.from("#products .heading-txt", {
     trigger: "#products .heading-txt",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
 
@@ -82,7 +80,6 @@ gsap.from("#testimonial .heading-txt", {
     scroller: "body",
     start: "top 100%",
     end: "bottom 50%",
-    markers: true,
   },
 });
 gsap.from("#features .boxs", {
@@ -93,7 +90,6 @@ gsap.from("#features .boxs", {
     trigger: "#features .boxs",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
 gsap.from("#products .boxs", {
@@ -104,7 +100,6 @@ gsap.from("#products .boxs", {
     trigger: "#products .boxs",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
 
@@ -116,6 +111,5 @@ gsap.from("#testimonial .boxs", {
     trigger: "#testimonial .boxs",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
